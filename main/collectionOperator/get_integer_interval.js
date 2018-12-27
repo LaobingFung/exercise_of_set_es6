@@ -1,8 +1,13 @@
 'use strict';
 
-function get_integer_interval(number_a, number_b) {
-  //在这里写入代码
+function get_integer_interval(numberA, numberB) {
+  let arr = new Array();
+  let interval = numberA > numberB ? -1 : 1;
+  while (numberA !== numberB) {
+    arr.push(numberA);
+    numberA += interval;
+  }
+  arr.push(numberA);
+  return arr;
 }
-
 module.exports = get_integer_interval;
-
