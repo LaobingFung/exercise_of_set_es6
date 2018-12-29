@@ -1,8 +1,7 @@
 'use strict';
 
 function choose_no_repeat_number(collection) {
-
-  //在这里写入代码
+  return collection.filter((curItem, curI) => collection.indexOf(curItem) === curI);
 }
 
 module.exports = choose_no_repeat_number;
