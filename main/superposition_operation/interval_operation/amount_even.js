@@ -1,8 +1,7 @@
 'use strict';
 
 function amount_even(collection) {
-
-  //在这里写入代码
+  return collection.filter((curItem) => curItem % 2 === 0).reduce((acc, curItem) => acc += curItem, 0)
 }
 
 module.exports = amount_even;
